@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Intake Form - Optima Grata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      color: #555;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Client Intake Form</h1>
+  <form action="https://bright-papers-mate.loca.lt/webhook/client-intake" method="POST">
+    <label for="timestamp">Date</label>
+    <input type="date" id="timestamp" name="timestamp" required />
+
+    <label for="name">Your Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="service">Type of Service Needed</label>
+    <input type="text" id="service" name="service" required />
+
+    <label for="type">Service Type</label>
+    <select id="type" name="type" required>
+      <option value="">Select Type</option>
+      <option value="Residential">Residential</option>
+      <option value="Commercial">Commercial</option>
+    </select>
+
+    <label for="location">Job Location</label>
+    <input type="text" id="location" name="location" required />
+
+    <label for="budget">Estimated Budget</label>
+    <input type="text" id="budget" name="budget" required />
+
+    <label for="notes">Additional Notes</label>
+    <textarea id="notes" name="notes" rows="4" placeholder="Describe any additional info..."></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</body>
+</html>
