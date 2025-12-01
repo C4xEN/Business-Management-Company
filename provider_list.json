@@ -1,0 +1,80 @@
+[
+  {
+    "company": "Plumber's R Us",
+    "code": "PRU",
+    "category": "Plumbing",
+    "coverage": "NYC, NJ, CT"
+  },
+  {
+    "company": "Fence Kings",
+    "code": "FKG",
+    "category": "Fencing",
+    "coverage": "NY, PA"
+  },
+  {
+    "company": "Marine Pros",
+    "code": "MRP",
+    "category": "Marine Repair",
+    "coverage": "FL, GA"
+  },
+  {
+    "company": "Power Wash Experts",
+    "code": "PWE",
+    "category": "Painting/Pressure Washing",
+    "coverage": "NJ, NY"
+  },
+  {
+    "company": "Jet Catering",
+    "code": "JTC",
+    "category": "Catering",
+    "coverage": "National"
+  },
+  {
+    "company": "Bright Electric",
+    "code": "BLE",
+    "category": "Electrical",
+    "coverage": "NYC, NJ, PA"
+  },
+  {
+    "company": "Green Yard Landscaping",
+    "code": "GYL",
+    "category": "Landscaping",
+    "coverage": "NYC, CT"
+  },
+  {
+    "company": "Pave Masters",
+    "code": "PVM",
+    "category": "Cement / Paving",
+    "coverage": "NYC Metro"
+  },
+  {
+    "company": "Travel Execs",
+    "code": "TRX",
+    "category": "Travel Services",
+    "coverage": "Global"
+  },
+  {
+    "company": "StructureCare",
+    "code": "STR",
+    "category": "Structural Repair",
+    "coverage": "Tri-State Area"
+  },
+  {
+    "company": "AirPro HVAC",
+    "code": "APH",
+    "category": "Commercial Construction",
+    "coverage": "NJ, NY"
+  },
+  {
+    "company": "WireSmart",
+    "code": "WRS",
+    "category": "Wiring / IT",
+    "coverage": "NY, CT, PA"
+  },
+  {
+    "company": "Bug Shield Inc",
+    "code": "BSI",
+    "category": "Pest Control",
+    "coverage": "NYC"
+  }
+]
