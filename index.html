@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Intake Form - Optima Grata</title>
+  <title>Optima Grata | Client Intake Form</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -52,43 +52,49 @@
   </style>
 </head>
 <body>
-  <h1>Client Intake Form</h1>
-<form action="https://n8n.optima-grata.com/webhook/client-intake" method="POST">
+  <h1>Optima Grata | Client Intake Form</h1>
+  <form action="https://n8n.optima-grata.com/webhook/og-intake" method="POST">
+    
+    <input type="hidden" id="Timestamp" name="Timestamp" />
+    <input type="hidden" id="Job_ID" name="Job_ID" />
 
-  <label for="timestamp">Date</label>
-  <input type="date" id="timestamp" name="timestamp" required />
+    <label for="Full_Name">Full Name</label>
+    <input type="text" id="Full_Name" name="Full_Name" required />
 
-  <label for="name">Your Full Name</label>
-  <input type="text" id="name" name="name" required />
+    <label for="Company">Company</label>
+    <input type="text" id="Company" name="Company" required />
 
-  <label for="service">Type of Service Needed</label>
-  <input type="text" id="service" name="service" required />
+    <label for="Role">Role</label>
+    <select id="Role" name="Role" required>
+      <option value="">Select Role</option>
+      <option value="Client">Client</option>
+      <option value="Provider">Provider</option>
+    </select>
 
-  <label for="type">Service Type</label>
-  <select id="type" name="type" required>
-    <option value="">Select Type</option>
-    <option value="Residential">Residential</option>
-    <option value="Commercial">Commercial</option>
-  </select>
+    <label for="Title">Title / Position</label>
+    <input type="text" id="Title" name="Title" required />
 
-  <label for="location">Job Location</label>
-  <input type="text" id="location" name="location" required />
+    <label for="Category">Service Category</label>
+    <input type="text" id="Category" name="Category" required />
 
-  <label for="budget">Estimated Budget</label>
-  <input type="text" id="budget" name="budget" required />
+    <label for="Location">Location</label>
+    <input type="text" id="Location" name="Location" required />
 
-  <label for="notes">Additional Notes</label>
-  <textarea id="notes" name="notes" rows="4" placeholder="Describe any additional info..."></textarea>
+    <label for="Budget">Budget / Experience</label>
+    <input type="text" id="Budget" name="Budget" />
 
-      <button type="submit">Submit Request</button>
+    <label for="Notes">Additional Notes</label>
+    <textarea id="Notes" name="Notes" rows="4" placeholder="Add any relevant details..."></textarea>
+
+    <button type="submit">Submit Request</button>
   </form>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const now = new Date().toISOString().split("T")[0];
-      document.getElementById("timestamp").value = now;
+    document.addEventListener("DOMContentLoaded", () => {
+      const now = new Date().toISOString();
+      document.getElementById("Timestamp").value = now;
+      document.getElementById("Job_ID").value = "OG-" + Date.now();
     });
   </script>
 </body>
 </html>
-
